@@ -1,0 +1,20 @@
+SHOW DATABASES; 
+
+CREATE DATABASE mydb11;
+
+USE mydb11;
+
+CREATE TABLE usuarios (
+id INT PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(30),
+correo VARCHAR(100)
+);
+
+INSERT INTO usuarios (nombre, correo)
+VALUES ('Maria Lopez', 'MariaDB@example.com'),
+	   ('Marco Perero', 'Marco@example.com'),
+       ('API en 1 hora', 'API@example.com');
+       
+SHOW TABLES;
+
+SELECT * FROM usuarios;
